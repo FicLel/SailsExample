@@ -56,7 +56,7 @@ module.exports = {
 			})
 		})
 		.catch(function(err){
-			sails.log.debu(err)
+			sails.log.debug(err)
 			return res.send({
 				'success': false,
 				'message': 'Tuvimos un little problema editando'
@@ -64,7 +64,7 @@ module.exports = {
 		})
 	},
 	delete: function(req, res){
-		Restaurants.update(req.param('id'))
+		Restaurants.destroy(req.param('id'))
 		.then(function(restaurantes){
 			return res.send({
 				'sucess': true,
