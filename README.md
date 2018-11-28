@@ -2,7 +2,7 @@
 |||
 |--|--|
 |||
-|![enter image description here](https://sailsjs.com/images/logo_sails.png)  | ![enter image description here](https://vuejs.org/images/logo.png) |
+|![enter image description here](https://sailsjs.com/images/logo_sails.png =250x150)  | ![enter image description here](https://vuejs.org/images/logo.png) |
 ## Sails JS
 [Sails](https://sailsjs.com) JS es un framework de node js diseñado para emular el famoso diseño MVC muy parecido a Ruby on Rails.
 Para instalarlo: `npm install sails -g`
