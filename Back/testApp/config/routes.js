@@ -22,6 +22,8 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
   'GET /restaurants' : 'RestaurantsController.get',
   'POST /restaurants': 'RestaurantsController.create',
+  'PUT /restaurants/:id': 'RestaurantsController.update',
+  'DELETE /restaurants/:id': 'RestaurantsController.delete'
 
 
   /***************************************************************************

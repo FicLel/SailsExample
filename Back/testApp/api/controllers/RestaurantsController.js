@@ -45,6 +45,40 @@ module.exports = {
 				'message': 'Unable to create record'	
 			})
 		})
+	}, 
+	update: function(req, res){
+		Restaurants.update(req.param('id'), req.allParams())
+		.then(function(restaurantes){
+			return res.send({
+				'success':true,
+				'message': 'Se ha actualizado con exito',
+				'data': restaurantes
+			})
+		})
+		.catch(function(err){
+			sails.log.debu(err)
+			return res.send({
+				'success': false,
+				'message': 'Tuvimos un little problema editando'
+			})
+		})
+	},
+	delete: function(req, res){
+		Restaurants.update(req.param('id'))
+		.then(function(restaurantes){
+			return res.send({
+				'sucess': true,
+				'message': 'Se ha eliminado el registro',
+				'data': restaurantes
+			})
+		})
+		.catch(function(err){
+			sails.log.debug(err)
+			return res.send({
+				'sucess': false,
+				'message': 'No se pudo eliminar'
+			})
+		})
 	}
 
 };
