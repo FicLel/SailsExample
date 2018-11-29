@@ -22,3 +22,26 @@ Sails tiene el problema que debes estar haciendo *sails lift* en cada cambio rea
  - `nodemon app.js`
 
 Con esto solucionaremos el problema de estar montando el servidor en cada cambio, nota `migrate: 'alter'` es solo en ***produccion***
+
+## Vue
+
+Vue js puede ser implementado de forma modular, por lo que puede ser usado como solo una libería o incluso podría usarse de forma completa para levantar una aplicación, en este caso hemos usado el CLI, que se encuentra la versión 3.
+
+![](https://vuejs.org/images/components.png)
+
+1. [Vue.Js 2](https://vuejs.org/ "Vue.Js 2").
+2. [Vue CLI](https://github.com/vuejs/vue-cli "Vue CLI").
+3. Router `npm install vue-router --save`
+4. Axios `npm install axios --save`
+5. Para el uso de SASS `npm install sass-loader --save-dev` y `npm install --save-dev node-sass`
+
+### Datos encontrados durante el desarrollo
+
+1. Problema de acceso ajeno a url
+En `config\security.js` Verificar 
+```  cors: {
+     allRoutes: true,
+     allowOrigins: '*',
+     //allowCredentials: true,
+   }, ``` 
+y ``` csrf: false ```
