@@ -39,9 +39,10 @@ Vue js puede ser implementado de forma modular, por lo que puede ser usado como 
 
 1. Problema de acceso ajeno a url
 En `config\security.js` Verificar 
-```  cors: {
+```  
+cors: {
      allRoutes: true,
      allowOrigins: '*',
      //allowCredentials: true,
-   }, ``` 
-y ``` csrf: false ```
+``` 
+y `csrf: false `
