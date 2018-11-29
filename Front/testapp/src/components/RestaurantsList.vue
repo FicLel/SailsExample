@@ -3,7 +3,7 @@
 		<ul id="restaurantes-list" v-if="restaurantes != null">
 			<li v-for="(restaurante,key,index) in restaurantes">
 				<strong>{{restaurante.name}}</strong>
-				<button class="close" @click="getIdRestaurante(restaurante.id)">x</button>
+				<button class="close" @click="getIdRestaurante(restaurante.id,index)">x</button>
 
 			</li>
 		</ul>
@@ -25,11 +25,11 @@ export default {
     }
   },
   methods: {
-  	getIdRestaurante(ide){
+  	getIdRestaurante(ide,index){
   		const url = 'http://localhost:1337/restaurants/'+ide;
   		axios.delete(url)
   		.then(response=>{alert(response.data.message)});
-  		//this.restaurantes.splice(ide);
+  		this.restaurantes.splice(index,1);
   	},
   	getRestaurantes()
   	{

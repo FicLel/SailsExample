@@ -8,21 +8,17 @@
 
 <script>
 import axios from 'axios';
-export default {
-  name: 'add-restaurant',
-  mounted(){
-  	
-  },
-  data () {
+export default{
+  name:'add-restaurant',
+  data(){
     return {
-      texto: 'Ingrese se restaurante',
-      restaurantes: null,
-      nombre: null
+    	texto:'Ingrese se restaurante',
+      restaurantes:null,
+      nombre:null
     }
   },
-  methods: {
-  	setRestaurantes()
-  	{
+  methods:{
+  	setRestaurantes(){
   		axios.post('http://localhost:1337/restaurants',{
   			name: this.nombre
   		})
@@ -32,9 +28,8 @@ export default {
   		.catch(function(error){
   			console.log(error);
   		});
-  		
   	}
-   }
+  }
 }
 </script>
 <style lang="scss">
