@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import restauranteList from './components/RestaurantsList'
+import addRestaurante from './components/AddRestaurant'
 
 Vue.config.productionTip = false
 
@@ -9,6 +10,7 @@ Vue.use(VueRouter);
 
 const routes = [
 	{path: '/restauranteList', component: restauranteList},
+	{path: '/addrestaurant', component: addRestaurante},
 ];
 
 const router = new VueRouter({

@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <ul>
       <li><router-link to="/restauranteList">Restaurantes</router-link></li>
+      <li><router-link to="/addrestaurant">Añadir</router-link></li>
     </ul>
     <h2>{{msg}}</h2>
     <router-view></router-view>
@@ -21,7 +22,7 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    //HelloWorld
   }
 }
 </script>

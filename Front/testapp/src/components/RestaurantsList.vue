@@ -1,8 +1,10 @@
 <template>
 	<div>
 		<ul id="restaurantes-list" v-if="restaurantes != null">
-			<li v-for="restaurante in restaurantes ">
+			<li v-for="(restaurante,key,index) in restaurantes">
 				<strong>{{restaurante.name}}</strong>
+				<button class="close" @click="getIdRestaurante(restaurante.id)">x</button>
+
 			</li>
 		</ul>
 		<span v-else>Cargando restaurantes</span>
@@ -23,6 +25,12 @@ export default {
     }
   },
   methods: {
+  	getIdRestaurante(ide){
+  		const url = 'http://localhost:1337/restaurants/'+ide;
+  		axios.delete(url)
+  		.then(response=>{alert(response.data.message)});
+  		//this.restaurantes.splice(ide);
+  	},
   	getRestaurantes()
   	{
   		axios.get('http://localhost:1337/restaurants')
@@ -44,6 +52,13 @@ export default {
 			padding:20px;
 			overflow: hidden;
 		}
+.close{
+	height: 20px;
+	border-radious: 50%;
+	background: red;
+	right: 0;
 	}
+}
+
 
 </style>
