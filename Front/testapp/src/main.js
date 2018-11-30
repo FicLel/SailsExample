@@ -4,6 +4,8 @@ import App from './App.vue'
 import restauranteList from './components/RestaurantsList'
 import addRestaurante from './components/AddRestaurant'
 
+require('./assets/styles/main.scss');
+
 Vue.config.productionTip = false
 
 Vue.use(VueRouter);

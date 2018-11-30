@@ -35,6 +35,15 @@ Vue js puede ser implementado de forma modular, por lo que puede ser usado como 
 4. Axios `npm install axios --save`
 5. Para el uso de SASS `npm install sass-loader --save-dev` y `npm install --save-dev node-sass`
 
+### Ventajas y desventajas de vue 
+
+|Ventajas|Contras|
+|--|--|
+|***Facil de usar*** Vue esta basado en templates basados en html, lo cual ayuda a su facil integración |Al ser un framework reciente tiene muy  poco mercado actual, aunque se encuentre creciendo|
+|***Intrgacion smooth*** : Posee una integración por componentes la cual no le afectará en la escabiilidad||
+|***Buena documentación*** : Vue es uno de los frameworks mejor documentados de la web, en su pagina fuente podemos encontrar con detalles ||
+|***Adaptable*** : vue tiene la opcion de ser adaptable de la forma neccesario para un proyecto de diferentes escalas||
+
 ### Datos encontrados durante el desarrollo
 
 1. Problema de acceso ajeno a url
@@ -46,3 +55,9 @@ cors: {
      //allowCredentials: true,
 ``` 
 y `csrf: false `
+
+# CSS Framework
+
+## Bulma CSS
+
+[Bulma](https://bulma.io) es un framework css de software libre con modelo flexbox, modular y responsive el cual se basa solo en css... Esto es el porque lo usaremos en este ejemplo

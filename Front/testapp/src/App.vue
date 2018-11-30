@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <ul>
-      <li><router-link to="/restauranteList">Restaurantes</router-link></li>
-      <li><router-link to="/addrestaurant">Añadir</router-link></li>
-    </ul>
-    <h2>{{msg}}</h2>
-    <router-view></router-view>
-    <!--  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <NavBar></NavBar>
+    <div>
+     <!-- <img alt="Vue logo" src="./assets/logo.png">
+      <div class="MenuAbajo">
+        <ul>
+          <li><router-link to="/restauranteList">Restaurantes</router-link></li>
+          <li><router-link to="/addrestaurant">Añadir</router-link></li>
+        </ul>
+      </div>
+      
+      <h2>{{msg}}</h2>-->
+      <router-view></router-view>
+      <!--  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from './components/NavBar.vue'
 export default {
   name: 'app',
   data(){
@@ -22,6 +28,7 @@ export default {
     }
   },
   components: {
+    NavBar
     //HelloWorld
   }
 }
@@ -34,7 +41,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 ul {
   list-style-type: none;
