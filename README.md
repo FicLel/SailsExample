@@ -64,3 +64,5 @@ y `csrf: false `
 ## Bulma CSS
 
 [Bulma](https://bulma.io) es un framework css de software libre con modelo flexbox, modular y responsive el cual se basa solo en css... Esto es el porque lo usaremos en este ejemplo
+![Bulma CSS](https://bulma.io/images/bulma-logo.png)
+
