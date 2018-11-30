@@ -37,6 +37,9 @@ Vue js puede ser implementado de forma modular, por lo que puede ser usado como 
 
 ### Ventajas y desventajas de vue 
 
+#### Comparacion con otros framework
+[En la documentacion de vue](https://vuejs.org/v2/guide/comparison.html)
+
 |Ventajas|Contras|
 |--|--|
 |***Facil de usar*** Vue esta basado en templates basados en html, lo cual ayuda a su facil integración |Al ser un framework reciente tiene muy  poco mercado actual, aunque se encuentre creciendo|
